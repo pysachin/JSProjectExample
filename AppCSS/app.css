@@ -1,0 +1,28 @@
+
+.remove-tweet,
+.remove-tweet:hover
+{
+    float: right;
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.divSendEmail{
+    color: white;
+    background-color: firebrick;
+    font-family: 'Segoe UI';
+    text-align: center;
+}
+
+.divimg{
+    text-align: center;
+}
+
+#id-send{
+    float: left;
+}
+
+#id-resend{
+    float: right;
+}
