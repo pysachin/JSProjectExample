@@ -41,6 +41,8 @@ function include(file) {
 /* Include Many js files */
 include('Appjs/LocalStorage.js');
 include('Appjs/sendemail.js');
+include('Appjs/carisurance.js');
+
 
 
 

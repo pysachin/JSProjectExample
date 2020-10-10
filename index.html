@@ -35,7 +35,7 @@
             <a class="nav-link " id="id-ex-2" data-toggle="pill" href="#id-send-email">Example 2</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="id-ex-3" data-toggle="pill" href="#menu2">Menu 2</a>
+            <a class="nav-link" id="id-ex-3" data-toggle="pill" href="#id-car-insurance">Example 3</a>
         </li>
     </ul>
     <!-- Tab panes -->
@@ -65,7 +65,7 @@
             <div class="col-sm-6">
                 <h4 class="divSendEmail">Send New Email</h4>
 
-                <form>
+                <form id="id-email-form">
                     <div class="form-group">
                         <label for="id-To">To</label>
                         <input type="email" class="form-control" id="id-To" aria-describedby="emailHelp"
@@ -81,18 +81,78 @@
                     </div>
                 </form>
                 <div class="divimg">
-                    <img src="Icon/mail.gif" width="150" />
-                    <img src="Icon/spinner.gif" width="150" />
+                    <img id="id-sent" src="Icon/mail.gif" width="150" />
+                    <img id="id-spinner" src="Icon/spinner.gif" width="150" />
                 </div>
                 <button type="button" id="id-send" class="btn btn-outline-primary">SEND</button>
-                <button type="button" id="id-resend" class="btn btn-outline-danger">RESET</button>
+                <button type="button" id="id-reset" class="btn btn-outline-danger">RESET</button>
             </div>
         </div>
 
-        <div id="menu2" class="container tab-pane fade"><br>
-            <h3>Menu 2</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                rem aperiam.</p>
+        <div id="id-car-insurance" class="container tab-pane fade"><br>
+            <header>
+                <h1 class="text-center">Car Insurance Quote Online</h1>
+            </header>
+            <div class="row content-form">
+                <div class="col col-md-10 mr-md-auto ml-md-auto">
+                    <form action="#" id="request-quote">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name">
+                            </input>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">email:</label>
+                            <input type="email" class="form-control" id="email">
+                            </input>
+                        </div>
+                        <div class="form-group">
+                            <label for="make">Make:</label>
+                            <select class="form-control" id="make">
+                                <option value="">- Select -</option>
+                                <option value="1">American</option>
+                                <option value="2">Asian</option>
+                                <option value="3">European</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Year:</label>
+                            <select class="form-control" id="year"></select>
+                        </div>
+                        <fieldset class="form-group">
+                            <div class="row">
+                                <legend class="col-form-legend col-12">Level</legend>
+
+                                <div class="col12">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="level" value="basic" />
+
+                                            Basic
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="level" value="complete"
+                                                checked="checked" />
+                                            Complete
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div id="loading">
+                            <img src="Icon/spinner.gif">
+                        </div>
+                        <div id="result"></div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-raised btn-primary">Get Quote
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
 
     </div>
