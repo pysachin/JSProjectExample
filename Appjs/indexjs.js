@@ -42,6 +42,8 @@ function include(file) {
 include('Appjs/LocalStorage.js');
 include('Appjs/sendemail.js');
 include('Appjs/carisurance.js');
+include('Appjs/weeklybudgetapp.js');
+include('Appjs/ajax.js');
 
 
 

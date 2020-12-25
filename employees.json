@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "sachin",
+        "company": "MIND",
+        "job": "SE"
+    },
+    {
+        "id": 2,
+        "name": "Rahul",
+        "company": "MIND",
+        "job": "SE"
+    },
+    {
+        "id": 3,
+        "name": "Aman",
+        "company": "MIND",
+        "job": "SE"
+    },
+    {
+        "id": 4,
+        "name": "Manoj",
+        "company": "MIND",
+        "job": "SE"
+    }
+]
