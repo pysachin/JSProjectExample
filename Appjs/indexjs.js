@@ -44,6 +44,7 @@ include('Appjs/sendemail.js');
 include('Appjs/carisurance.js');
 include('Appjs/weeklybudgetapp.js');
 include('Appjs/ajax.js');
+include('Appjs/fetch.js');
 
 
 

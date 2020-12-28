@@ -4,6 +4,7 @@
 document.getElementById('id-aj-btn').addEventListener('click', LoadDataTxt);
 document.getElementById('id-aj-btn-2').addEventListener('click', LoadDataJSON);
 document.getElementById('id-aj-btn-3').addEventListener('click', LoadDataJSONArray);
+document.getElementById('id-aj-btn-4').addEventListener('click', LoadRESTAPIData);
 
 function LoadDataTxt() {
 
@@ -91,6 +92,37 @@ function LoadDataJSONArray() {
             });
 
             document.getElementById('id-output-3').innerHTML = htmloutput;
+        }
+    };
+
+    xhl.send();
+}
+
+function LoadRESTAPIData() {
+
+    const xhl = new XMLHttpRequest();
+    xhl.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);
+
+    xhl.onreadystatechange = function () {
+        if (this.status === 200 && this.readyState === 4) {
+
+            const posts = JSON.parse(this.responseText);
+
+            let htmloutput = ''
+
+            posts.forEach(post => {
+
+                htmloutput +=
+                    `
+                        <ul>
+                                <li> ID : ${post.id} </li>
+                                <li> Name : ${post.title} </li>                                
+                        </ul>            
+                    `;
+
+            });
+
+            document.getElementById('id-output-4').innerHTML = htmloutput;
         }
     };
 
